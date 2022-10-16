@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#fffdf1] text-[#5c5c5c] font-NotoSerif
+  }
+
+  h1 {
+    @apply hover:text-[#5c5c5c7e] hover:cursor-pointer font-extrabold text-3xl tracking-wider md:text-6xl
+  }
+
+  h3 {
+    @apply text-lg tracking-widest md:text-2xl
+  }
+
+  div {
+    @apply border-[#5c5c5c] md:text-lg
+  }
+
+  p {
+    @apply p-2 indent-4 text-[#0e0e0e] text-justify tracking-wide leading-relaxed
+      md:text-xl md:indent-8 md:leading-8 md:p-4
+  }
+
+  button {
+    @apply border-[#5c5c5c] hover:bg-[#5c5c5c] hover:text-[#fffdf1] border-[1px] font-extralight 
+      text-sm py-1 px-4 md:text-lg md:py-2 md:px-8
+  }
+
+  li {
+    @apply text-3xl m-16 hover:cursor-pointer text-[#fffef8] hover:text-[#5c5c5c] 
+      md:text-xl md:m-0 md:mx-3 md:text-[#5c5c5c] md:hover:text-[#fffdf1]
+  }
+
+  span {
+    @apply text-3xl tracking-widest
+  }
+}
