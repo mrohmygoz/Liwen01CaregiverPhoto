@@ -11,30 +11,30 @@ export default function Navbar() {
 
     return (
         <div className='z-40 fixed w-full'>
-            <div className='fixed w-full h-28 p-4 bg-[#fffdf1] md:h-40 md:p-8 md:px-14'>
-                <div className='border-b-[0.5px] w-full h-full flex items-start md:items-end justify-between pb-4 md:pb-6'>
-                    <div className='h-full flex flex-col md:flex-row md:items-end'>
-                        <h1 className='pb-1 md:p-0'>
+            <div className='fixed w-full h-28 p-4 bg-[#fffdf1] lg:h-36 lg:p-8 lg:px-14'>
+                <div className='border-b-[0.5px] w-full h-full flex items-start justify-between pb-4 lg:items-end lg:pb-6'>
+                    <div className='h-full flex flex-col lg:flex-row lg:items-end'>
+                        <h1 className='pb-1 lg:p-0'>
                             <Link href='/'>照見歲月</Link>
                         </h1>
-                        <h3 className='md:pl-1'>
+                        <h3 className='lg:pl-1'>
                             照顧者生命故事攝影展
                         </h3>
                     </div>
                     <IoMenuOutline 
-                        className='md:hidden hover:cursor-pointer hover:text-[#5c5c5c86]' 
+                        className='lg:hidden hover:cursor-pointer hover:text-[#5c5c5c86]' 
                         onClick={handleNav} 
                         size={40} 
                     />
-                    <ul className='hidden md:flex'>
+                    <ul className='hidden lg:flex'>
                         <li>
-                            策展緣起
+                            <Link href='/origin'>策展緣起</Link>
                         </li>
                         <li>
-                            參觀資訊
+                            <Link href='/info'>參觀資訊</Link>
                         </li>
                         <li>
-                            關於我們
+                            <Link href='/about'>關於我們</Link>
                         </li>
                     </ul>
                 </div>
@@ -45,7 +45,7 @@ export default function Navbar() {
                     ? 'fixed w-full h-screen bg-[#aaa9a3]' 
                     : 'hidden ease-in-out duration-300'}>
                 <div className='fixed w-full h-28 p-4'>
-                    <div className='border-b-[0.5px] w-full flex items-start justify-between pb-4'>
+                    <div className='border-b-[0.5px] w-full h-full flex items-start justify-between pb-4'>
                         <div className='h-full flex flex-col'>
                             <h1 className='pb-1'>
                                 照見歲月
@@ -59,14 +59,14 @@ export default function Navbar() {
                 </div>
                 <div className='w-full h-screen flex flex-col justify-center items-center'>
                     <ul>
-                        <li>
-                            策展緣起
+                        <li onClick={handleNav}>
+                            <Link href='/origin'>策展緣起</Link>
                         </li>
-                        <li>
-                            參觀資訊
+                        <li onClick={handleNav}>
+                            <Link href='/info'>參觀資訊</Link>
                         </li>
-                        <li>
-                            關於我們
+                        <li onClick={handleNav}>
+                            <Link href='/about'>關於我們</Link>
                         </li>
                         <li onClick={handleNav}>
                             <Link href='/'>更多故事</Link>
