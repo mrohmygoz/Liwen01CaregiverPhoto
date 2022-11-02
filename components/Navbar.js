@@ -76,9 +76,6 @@ export default function Navbar() {
                         <li onClick={handleNav}>
                             <a href={linkForm} target="_blank" rel="noreferrer">意見回饋</a>
                         </li>
-                        <li onClick={handleNav}>
-                            <Link href='/'>更多故事</Link>
-                        </li>
                     </ul>
                 </div>
             </div>
