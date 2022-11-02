@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
 
 export default function Navbar() {
+    const linkForm = 'https://docs.google.com/forms/d/e/1FAIpQLSfBvmCt_nRdqUsCNF-ESYDOENr7DORFtuKUuNrBAAh2IX-7iQ/viewform';
+
     const [nav, setNav] = useState(false);
 
     const handleNav = function () {
@@ -36,6 +38,9 @@ export default function Navbar() {
                         <li>
                             <Link href='/about'>關於我們</Link>
                         </li>
+                        <li>
+                            <a href={linkForm} target="_blank">意見回饋</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -67,6 +72,9 @@ export default function Navbar() {
                         </li>
                         <li onClick={handleNav}>
                             <Link href='/about'>關於我們</Link>
+                        </li>
+                        <li onClick={handleNav}>
+                            <a href={linkForm} target="_blank">意見回饋</a>
                         </li>
                         <li onClick={handleNav}>
                             <Link href='/'>更多故事</Link>

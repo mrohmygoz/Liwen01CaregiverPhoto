@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Info() {
     return (
         <div className='z-0 w-full absolute top-28 px-4 pt-2 pb-6 lg:top-36 lg:px-16 lg:pb-12'>
@@ -15,6 +17,12 @@ export default function Info() {
                 <p>「照見歲月」照顧者生命故事攝影展，再次邀請109年至110年生命敘事團體中五位成員、書寫自己的故事，並由團體成員之一的攝影師林佩瑾，藉著其專業背景，與身處照顧者經歷的獨特眼光，帶領我們透過影像拍攝一同進入照顧者與被照顧者的情感交流與互動。</p>
 
                 <p>攝影作品將呈現五組家庭、三大主題，包含「被照顧者的最愛」、「照顧者與被照顧者的互動」、「照顧者的能量」，以不同的視角，邀請您一同看見家庭照顧者的生命經歷與樣貌，感受長期照顧家人的歲月，並近一步關注長期照顧對個人生涯與家庭關係的影響力。</p>
+                
+                <div className='mt-4 flex justify-end p-2 lg:p-4'>
+                    <button>
+                        <Link href='/'>更多故事 ＞</Link>
+                    </button>
+                </div>
                 
             </div>
         </div>

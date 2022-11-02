@@ -10,7 +10,7 @@ import Footer from "./Footer";
 export default function Main() {
     return (
         <div className='z-0 w-full absolute top-28 px-4 pb-6 lg:top-36 lg:px-16'>
-            <div className='w-full grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6'>
+            <div className='w-full grid grid-cols-1 gap-2 lg:grid-cols-3 lg:gap-3'>
                 <MainPhoto img={Img01} title="故事 #01" storyUrl="/stories/01" />
                 <MainPhoto img={Img02} title="故事 #02" storyUrl="/stories/02" />
                 <MainPhoto img={Img03} title="故事 #03" storyUrl="/stories/03" />

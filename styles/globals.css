@@ -32,6 +32,11 @@ html {
     @apply border-[#5c5c5c] text-lg leading-9 lg:text-lg
   }
 
+  h4 {
+    @apply px-2 py-0 text-[#000000e3] tracking-widest text-xl font-extrabold
+      lg:text-xl lg:px-4 lg:py-0
+  }
+
   p {
     @apply p-2 text-[#5c5c5c] text-justify tracking-wide text-xl leading-9
       lg:text-xl lg:leading-8 lg:p-4

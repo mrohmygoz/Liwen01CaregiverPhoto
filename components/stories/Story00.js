@@ -3,9 +3,13 @@ import StoryFooter from "../StoryFooter";
 export default function Story00 () {
     return (
         <>
-            <p className='text-right'>
+            <p className='mt-4 lg:mt-8 text-right'>
                 文／林佩瑾
             </p>
+
+            <h2>
+                總會有光。
+            </h2>
 
             <p>隔著布簾、看著剪影、聽著人生！</p>
 
