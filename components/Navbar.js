@@ -39,7 +39,7 @@ export default function Navbar() {
                             <Link href='/about'>關於我們</Link>
                         </li>
                         <li>
-                            <a href={linkForm} target="_blank">意見回饋</a>
+                            <a href={linkForm} target="_blank" rel="noreferrer">意見回饋</a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +74,7 @@ export default function Navbar() {
                             <Link href='/about'>關於我們</Link>
                         </li>
                         <li onClick={handleNav}>
-                            <a href={linkForm} target="_blank">意見回饋</a>
+                            <a href={linkForm} target="_blank" rel="noreferrer">意見回饋</a>
                         </li>
                         <li onClick={handleNav}>
                             <Link href='/'>更多故事</Link>
